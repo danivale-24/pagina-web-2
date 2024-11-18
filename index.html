@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Ponemos CLASS para poder usar la hoja de estilo -->
+    <header class = "header">
+
+        <div class = "menu container">
+            <a href="#" class = "logo">logo</a>
+            <input type="checkbox" id = "menu"/>
+            <label for="menu">
+                <img src = "images/menu.png" class = "menu-icono" alt="menu"></img>
+            </label>
+
+            <!--NAVEGACION PARA LA PGINA-->
+            <nav class = "navbar">
+                <!--ul se usa para definir que va a ser un tipo de datos agrupados de manera desodernada
+                utilizara viñetas de puntos para agrupar-->
+                <ul>
+                    <!--Cuando combino ul y li se podran las viñetas
+                    Cuando sea ol van a ser con la enumeracion-->
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Tienda</a></li>
+                    <li><a href="#">Cuenta</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!--PARTE PARA EL CARRITO-->
+            <div>
+                <ul>
+                    <li class = "submenu">
+                        <img src="images/car.svg" id="img-carrito" alt="Car Shop">
+                        <div id = "carrito">
+                            <table id = "lista-carrito">
+                                <thread>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thread>
+                                <tbody></tbody>
+                            </table>
+                            <a href = "#" id = "vaciar-carrito" class = btn-2>Vaciar Carrito</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>  
+        </div>
+
+        <!--Creamos un div (apartado) para la imagen principal y contenido del header-->
+        <div class = "header-content container">
+            <div class = "header">
+                <img src="images/right.png" alt = "">
+            </div>
+            <div class = "header-txt">
+                <!--h1 Indica que es el titulo principal de esta parte -->
+                <h1>Ofertas Especiales</h1>
+                <!--PARRAFO QUE VA A TENER LA DESCRIPCION-->
+                <p>estrena las mejores prendas</p>  
+                <a href="#" class = "btn-1">Información</a>    
+            </div>
+        </div>
+    </header>
+
+    <!--EN ESTE APARTADO DEBERIA SER INTERACTIVO CON LA BASE DE DATOS-->
+    <section class = "ofert container">     
+
+        <div class = "ofert-1"></div>
+            <div class = "ofert-img">
+                <img src="images/f1.jpg" alt = "">
+            </div>
+            <div class = "ofert-txt">
+                <h3>Producto 2</h3>
+                <a href = "#" class = "btn-2"> Información</a>
+            </div>
+        </div>
+
+        <div class = "ofert-1"></div>
+            <div class = "ofert-img">
+                <img src="images/f2.jpg" alt = "">
+            </div>
+            <div class = "ofert-txt">
+                <h3>Producto 3</h3>
+                <a href = "#" class = "btn-2"> Información</a>
+            </div>
+        </div>
+
+        <div class = "ofert-1"></div>
+            <div class = "ofert-img">
+                <img src="images/f3.jpg" alt = "">
+            </div>
+            <div class = "ofert-txt">
+                <h3>Producto 3</h3>
+                <a href = "#" class = "btn-2"> Información</a>
+            </div>
+        </div>
+    </section>
+
+    <!--PRODUCTOS DE CONTENIDO PRINCIPAL AQUI-->
+    <main class="products container" id = "lista-1">
+        <h2>Productos</h2>
+        <div class="product-content" id="product-container">
+            <!-- Los productos se generarán aquí dinámicamente por javaScript-->
+        </div>
+    </main>
+
+    <!--SECCION PARA TODOS LOS ICONOS-->
+    <section class = "icons container">
+        <!--Seccion para el primer icono-->
+        <div class = "icon-1">
+            <!--SECCION PARA ACOMODAR LAS IMAGENES-->
+            <div class = "icon-img">
+                <img src = "images/i1.svg" alt = "">
+            </div>
+            <div class = "icon-txt">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <p>ESTO ES NETAMENTE TEXTO DE RELLENO</p>
+            </div>
+        </div>
+
+        <!--Seccion para el primer icono-->
+        <div class = "icon-1">
+            <!--SECCION PARA ACOMODAR LAS IMAGENES-->
+            <div class = "icon-img">
+                <img src = "images/i2.svg" alt = "">
+            </div>
+            <div class = "icon-txt">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <p>ESTO ES NETAMENTE TEXTO DE RELLENO</p>
+            </div>
+        </div>
+
+        <!--Seccion para el primer icono-->
+        <div class = "icon-1">
+            <!--SECCION PARA ACOMODAR LAS IMAGENES-->
+            <div class = "icon-img">
+                <img src = "images/i3.svg" alt = "">
+            </div>
+            <div class = "icon-txt">
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+                <p>ESTO ES NETAMENTE TEXTO DE RELLENO</p>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION PARA BLOG -->
+    <section class = "blog container">
+
+        <div class = "blog-1">
+            <img src="images/b1.jpg" alt="">
+            <h3>Blog 1</h3>
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias neque dicta sunt 
+                voluptatibus earum tenetur soluta voluptatum asperiores possimus, temporibus consectetur 
+                voluptas et beatae unde veritatis! Numquam iure ipsum quasi!</p>
+        </div>
+
+
+        <div class = "blog-1">
+            <img src="images/b2.jpg" alt="">
+            <h3>Blog 1</h3>
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias neque dicta sunt 
+                voluptatibus earum tenetur soluta voluptatum asperiores possimus, temporibus consectetur 
+                voluptas et beatae unde veritatis! Numquam iure ipsum quasi!</p>
+        </div>
+
+        <div class = "blog-1">
+            <img src="images/b3.jpg" alt="">
+            <h3>Blog 1</h3>
+            <p> 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias neque dicta sunt 
+                voluptatibus earum tenetur soluta voluptatum asperiores possimus, temporibus consectetur 
+                voluptas et beatae unde veritatis! Numquam iure ipsum quasi!</p>
+        </div>
+
+    </section>
+
+    <footer class = "footer">
+
+        <div class = "footer-content container">
+
+            <div class = "link">
+                <h3>LOREM</h3>
+                <ul>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                </ul>
+            </div>
+
+            <div class = "link">
+                <h3>LOREM</h3>
+                <ul>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                </ul>
+            </div>
+
+            <div class = "link">
+                <h3>LOREM</h3>
+                <ul>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                    <li><a href="#">lorem</a> </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src = "script.js"> </script>
+</body>
+</html>
